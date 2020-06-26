@@ -11,7 +11,7 @@ let model = {
     getAllTasksFromAPI: function() {
         const _this = model;
         $.ajax({
-            url: "<qui va la url>",
+            url: "https://uaemex-backend-5fkres34za-uc.a.run.app/api/v1/tasks",
             method: 'GET'
         })
             .done(function(data) {
@@ -22,7 +22,7 @@ let model = {
     addTask: function(text) {
         const _this = model;
         $.ajax({
-            url: "<qui va la url>",
+            url: "https://uaemex-backend-5fkres34za-uc.a.run.app/api/v1/tasks",
             method: 'POST',
             data: "{\"description\":\"" + text + "\"}",
             crossDomain: true,
